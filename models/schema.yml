@@ -123,7 +123,7 @@ sources:
            description: nb of impressions
          - name: click
            description: nb of clicks
-           
+
 models:
    - name: int_sales_margin
      description: margin calculation per order
