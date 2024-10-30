@@ -51,6 +51,79 @@ sources:
            description: the cost of the logisitic
          - name: ship_cost
            description: the cost of the ship
+     - name: adwords
+       identifier: raw_gz_adwords
+       description: cost, impressions, clicks by campaign of Adwords
+       columns:
+         - name: date_date
+           description: date of the data of the campaign
+         - name: paid_source
+           description: source of the campaign
+         - name: campaign_key
+           description: the key of the campaign, not primary
+         - name: camPGN_name
+           description: the name of the campaign
+         - name: ads_cost
+           description: the cost of the campaign
+         - name: impression
+           description: nb of impressions
+         - name: click
+           description: nb of clicks
+     - name: bing
+       identifier: raw_gz_bing
+       description: cost, impressions, clicks by campaign of Bing
+       columns:
+         - name: date_date
+           description: date of the data of the campaign
+         - name: paid_source
+           description: source of the campaign
+         - name: campaign_key
+           description: the key of the campaign, not primary
+         - name: camPGN_name
+           description: the name of the campaign
+         - name: ads_cost
+           description: the cost of the campaign
+         - name: impression
+           description: nb of impressions
+         - name: click
+           description: nb of clicks
+     - name: criteo
+       identifier: raw_gz_criteo
+       description: cost, impressions, clicks by campaign of Criteo
+       columns:
+         - name: date_date
+           description: date of the data of the campaign
+         - name: paid_source
+           description: source of the campaign
+         - name: campaign_key
+           description: the key of the campaign, not primary
+         - name: camPGN_name
+           description: the name of the campaign
+         - name: ads_cost
+           description: the cost of the campaign
+         - name: impression
+           description: nb of impressions
+         - name: click
+           description: nb of clicks
+     - name: facebook
+       identifier: raw_gz_facebook
+       description: cost, impressions, clicks by campaign of Facebook
+       columns:
+         - name: date_date
+           description: date of the data of the campaign
+         - name: paid_source
+           description: source of the campaign
+         - name: campaign_key
+           description: the key of the campaign, not primary
+         - name: camPGN_name
+           description: the name of the campaign
+         - name: ads_cost
+           description: the cost of the campaign
+         - name: impression
+           description: nb of impressions
+         - name: click
+           description: nb of clicks
+           
 models:
    - name: int_sales_margin
      description: margin calculation per order
