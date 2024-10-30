@@ -216,3 +216,31 @@ models:
          description: the cost of preparing the parcel in the distribution centre/warehouse
        - name: ship_cost
          description: shipping cost paid by Greenweez to the carrier/logistics provider
+   - name: int_campaigns
+     description: the fusion of the 4 sources Adwords, Bing, Criteo and Facebook
+     columns:
+       - name: date_date
+         description: date of the data of the campaign
+       - name: paid_source
+         description: source of the campaign
+       - name: campaign_key
+         description: the key of the campaign, not primary
+       - name: camPGN_name
+         description: the name of the campaign
+       - name: ads_cost
+         description: the cost of the campaign
+       - name: impression
+         description: nb of impressions
+       - name: click
+         description: nb of clicks
+   - name: int_campaigns_day
+     description: ads_cost, impression and click by day
+     columns:
+       - name: date_date
+         description: date of the date of the campaign
+       - name: ads_cost
+         description: the cost of the ads
+       - name: impression
+         description: nb of impressions
+       - name: click
+         description: nb of clicks
